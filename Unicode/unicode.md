@@ -23,7 +23,7 @@ Python developer since 2006
 
 Grew up in the Davis County area
 
-Moved to Logan in 2001 after religious sebattical to British Columbia
+Moved to Logan in 2001 after religious sabbatical to British Columbia
 
 Graduated from USU with BCompSc, BEng, MBA
 
@@ -191,7 +191,7 @@ Not represented on hard drive or across the wire.  Memory only.
 
 How do we represent Unicode on the hard drive...
 
-Fantastic convenience has shot us in the foot: 
+Fantastic convenience has shot us in the foot:
 
 English text looks the same in ascii as in UTF-8.
 
@@ -275,7 +275,7 @@ utf8_general_ci is satisfactory for both German and French, except that “ß”
 
 If this is OK, you should use utf8_general_ci because it is faster.
 
-Otherwise, use utf8_unicode_ci because it is more accurate. 
+Otherwise, use utf8_unicode_ci because it is more accurate.
 
 ---
 
@@ -401,10 +401,10 @@ It should have been decoded as 'utf8' into unicode explicitly
     !python
     >>> "Title: %s" % my_unicode
     u'Title: Hi \u2119\u01b4\u2602\u210c\xf8\u1f24'
-     
+
     >>> u"Title: %s" % my_string
     u'Title: Hello World'
-     
+
     >>> print my_unicode
     Traceback (most recent call last):
     UnicodeEncodeError: 'ascii' codec can't encode
@@ -511,7 +511,7 @@ very silly example, because ASCII is a subset of UTF-8.
     except socket.timeout:
         logging.error('Printer timeout, unable to send')
         self.abort_job.set()
-        
+
 #### Manual SQL save
 
     !python
@@ -646,7 +646,7 @@ utf8_general_ci
 utf8_unicode_ci
 ```
 
-* Difference? utf8_general_ci is satisfactory for both German and French, except that “ß” is equal to “s”, and not to “ss”. If this is acceptable for your application, you should use utf8_general_ci because it is faster. Otherwise, use utf8_unicode_ci because it is more accurate. 
+* Difference? utf8_general_ci is satisfactory for both German and French, except that “ß” is equal to “s”, and not to “ss”. If this is acceptable for your application, you should use utf8_general_ci because it is faster. Otherwise, use utf8_unicode_ci because it is more accurate.
 
 .fx: smallest
 
