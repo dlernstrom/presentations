@@ -575,7 +575,8 @@ very silly example, because ASCII is a subset of UTF-8.
     !python
     def read_file (filename, encoding):
         if '/' in filename:
-            raise ValueError("'/' not allowed in filenames")
+            raise ValueError(
+                "'/' not allowed in filenames")
         unicode_name = filename.decode(encoding)
         f = open(unicode_name, 'r')
         # ... return contents of file ...
@@ -591,7 +592,8 @@ For example, let’s say you have a content management system that takes a Unico
     !python
     def read_file (filename, encoding):
         if '/' in filename:
-            raise ValueError("'/' not allowed in filenames")
+            raise ValueError(
+                "'/' not allowed in filenames")
         unicode_name = filename.decode(encoding)
         f = open(unicode_name, 'r')
         # ... return contents of file ...
