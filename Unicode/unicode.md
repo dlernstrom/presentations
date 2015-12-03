@@ -55,7 +55,7 @@ Shipped worldwide.  Python systems used an ODBC connection to pull shipment data
 
 ---
 
-# Bogotá Columbia
+# Bogotá Colombia
 
 <img src="5421517469_d0d2997eec_b.jpg" />
 
@@ -484,7 +484,7 @@ very silly example, because ASCII is a subset of UTF-8.
     !python
     import codecs
     with codecs.open('utf8_sample_data.rst',
-                     encoding='utf-8'):
+                     encoding='utf-8') as f:
         for line in f:
             print repr(line)
 
