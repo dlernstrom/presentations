@@ -355,7 +355,7 @@ Python 2 has implicit conversion, Python 3 does not
     !python
     >>> u"Hello " + "world"
     u'Hello world'
-    # This is the same as line 2 above
+    # This is the same as line 1 above
     >>> u"Hello " + ("world".decode("ascii"))
     u'Hello world'
     >>> sys.getdefaultencoding()
@@ -574,11 +574,11 @@ very silly example, because ASCII is a subset of UTF-8.
 
     !python
     def read_file (filename, encoding):
-    if '/' in filename:
-        raise ValueError("'/' not allowed in filenames")
-    unicode_name = filename.decode(encoding)
-    f = open(unicode_name, 'r')
-    # ... return contents of file ...
+        if '/' in filename:
+            raise ValueError("'/' not allowed in filenames")
+        unicode_name = filename.decode(encoding)
+        f = open(unicode_name, 'r')
+        # ... return contents of file ...
 
 # presenter notes
 
@@ -590,11 +590,11 @@ For example, let’s say you have a content management system that takes a Unico
 
     !python
     def read_file (filename, encoding):
-    if '/' in filename:
-        raise ValueError("'/' not allowed in filenames")
-    unicode_name = filename.decode(encoding)
-    f = open(unicode_name, 'r')
-    # ... return contents of file ...
+        if '/' in filename:
+            raise ValueError("'/' not allowed in filenames")
+        unicode_name = filename.decode(encoding)
+        f = open(unicode_name, 'r')
+        # ... return contents of file ...
 
 if attacker could specify the 'base64' encoding, they could pass 'L2V0Yy9wYXNzd2Q=', which is the base-64 encoded form of the string '/etc/passwd'
 
