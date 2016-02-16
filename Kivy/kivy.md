@@ -1,4 +1,6 @@
-# Kivy <img src="kivy-logo-black-256.png" />
+# Kivy (My Experience)
+
+<img src="kivy-logo-black-256.png" />
 
 David Ernstrom
 
@@ -13,6 +15,8 @@ Python Utah North, February 2015
 
 Kivy - Open source Python library for rapid development of applications
 that make use of innovative user interfaces, such as multi-touch apps.
+
+Explain why the subtitle
 
 ---
 
@@ -48,13 +52,23 @@ Are the only ones in the world who can mass produce a hologram that has 2 dimens
 
 My software is integral in design, creation, mass-production, tracking, and management of holographic production
 
-Codebase of in-house developed python code is 41,000 LOC with a pylint grade of 6.13.
+Codebase of in-house developed python code is 41,000 LOC with a pylint grade of 6.14.
 
 Shipped worldwide.  Python systems used an ODBC connection to pull shipment data for producing address labels.  Started shipping product occasionally to Bogotá Columbia
 
 ---
 
-# Cross Platform
+# What is Kivy?
+
+<img src="kivy-logo-black-256.png" />
+
+.fx:
+
+# presenter notes
+
+---
+
+# Kivy is Cross Platform
 
 <img src="cross_platform.png" style="width:100%;" />
 
@@ -69,7 +83,7 @@ multiple devices.
 
 ---
 
-# Native Inputs
+# Kivy uses Native Inputs
 * most inputs, protocols and devices
     * WM_Touch
     * WM_Pen
@@ -79,6 +93,7 @@ multiple devices.
     * Linux Kernel HID
     * TUIO
 * A multi-touch mouse simulator is included.
+* Kivy Garden - https://kivy.org/docs/api-kivy.garden.html
 
 .fx: smallest
 
@@ -88,7 +103,7 @@ Kivy supports native inputs.  They just pretty much work.
 
 ---
 
-# Business Friendly
+# Kivy is Business Friendly
 
 * 100% free to use
     * MIT license (starting from 1.7.2)
@@ -97,6 +112,7 @@ Kivy supports native inputs.  They just pretty much work.
 * You can use it in a commercial product.
 * Framework is stable and has a well documented API.
 * Programming guide to help you get started.
+* They follow PEP8. ☺
 
 .fx: smallest
 
@@ -124,15 +140,22 @@ GPU Accelerated
     from kivy.app import App
     from kivy.uix.button import Button
 
+
     class TestApp(App):
         def build(self):
             return Button(text='Hello World')
+
 
     TestApp().run()
 
 .fx: smaller
 
 # presenter notes
+Several things to note here.
+First, the main class (TestApp) derives from App. That's important.
+Second, notice that the build method returns a Button instance.
+The build method should return a widget.
+Kivy believes in a hierarchy of widgets.
 
 ---
 
@@ -143,6 +166,7 @@ GPU Accelerated
 # presenter notes
 
 Very simple.  One huge button.
+Flip back and forth as appropriate.
 
 ---
 
@@ -158,9 +182,11 @@ App to demo capability and sample widgets in Play Store (Android).
 
 <img src="flappy_bird_pycon_talk.png" />
 
-[https://youtu.be/U14P8gtjQmU](https://youtu.be/U14P8gtjQmU)
+Tutorial here: [https://youtu.be/U14P8gtjQmU](https://youtu.be/U14P8gtjQmU)
 
-Click here for demo
+Demo App on Computer & Phone
+
+Show Code
 
 # presenter notes
 
@@ -168,6 +194,8 @@ Then I started exploring example applications and remembered hearing about
 a Kivy tutorial at PyCon in 2015.
 
 Show flappy bird on phone? on computer?
+
+Show some flappy code.
 
 ---
 
@@ -303,6 +331,8 @@ google usb drivers on windows
 So was the share usb devices, stuff in VirtualBox.
 
 ---
+
+# Questions?
 
 # Thank you
 
