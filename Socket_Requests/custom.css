@@ -1,0 +1,17 @@
+/* We can customize the theme CSS here */
+div.slide.black_bkgd {
+    background-color: black;
+}
+/* smallest */
+.smallest section {
+  font-size: 17pt;
+}
+
+.smallest div h1 {
+  font-size: 38pt;
+}
+
+.smallest section pre {
+  font-size: 10pt;
+}
+div.titleslide h1 { padding-top: 20px; font-size: 60px; font-weight: bold;}
