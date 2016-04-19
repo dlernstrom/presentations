@@ -4,7 +4,7 @@
 
 David Ernstrom
 
-Python Utah North, April 2015
+Python Utah North, April 2016
 
 <a href="">http://ernstrom.net/socket_requests.html</a>
 
